@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 50px auto;
+  width: clamp(18.75rem, 14.205rem + 22.73vw, 31.25rem);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0 20px;
+}
+
+.btn {
+  width: 20%;
+  padding: 10px 30px;
+}
