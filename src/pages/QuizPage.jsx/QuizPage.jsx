@@ -44,18 +44,12 @@ const QuizPage = () => {
     if (questionCounter < questionList.length) {
       setSingleQuestion(questionList[questionCounter]);
       setQuestionCounter(questionCounter + 1);
-      // setInputValue('');
+
       inputRef.current.focus();
     } else {
       setQuestionBtn(true);
     }
   };
-
-  // useEffect(() => {
-  //   if (questionBtn) {
-  //     console.log(`Your result: ${answersCounter}/${questionList.length}`);
-  //   }
-  // }, [questionBtn, answersCounter, questionList.length]);
 
   return (
     <div>
@@ -86,7 +80,7 @@ const QuizPage = () => {
             />
           </div>
           <button
-            style={{ display: questionBtn ? 'none' : '' }}
+            style={{ display: questionBtn ? 'none' : '', marginTop: '30px' }}
             onClick={questionHandler}
           >
             Next Question
